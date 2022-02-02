@@ -1,0 +1,42 @@
+<div class="row m-auto">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-2">
+          <label>Name
+            <input type="text" class="form-control"
+                   #name
+                   name="cartProduct">
+          </label>
+        </div>
+        <div class="col-sm-2">
+          <label>Amount
+            <input type="number" class="form-control"
+                   [(ngModel)]="amount"
+                   name="cartProduct">
+          </label>
+        </div>
+<!--        <div class="col-sm-2">-->
+<!--          <label>Color-->
+<!--          <input type="text" class="form-control"-->
+<!--                 [(ngModel)]="color"-->
+<!--                 name="cartProduct">-->
+<!--          </label>-->
+<!--        </div>-->
+        <div class="col-sm-2">
+          <label>Price
+            <input type="number" class="form-control"
+                   [(ngModel)]="price"
+                   name="cartProduct">
+          </label>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-xs-12">
+        <app-button BackgroundColor="green" TextColor="white" buttonType="submit" (click)="onAddProduct()">Add</app-button>
+        <app-button BackgroundColor="#0d6efd" TextColor="white">Clear</app-button>
+      </div>
+    </div>
+  </div>
+</div>

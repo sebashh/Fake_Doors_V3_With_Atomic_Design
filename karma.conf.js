@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/Winkel-Sinkel-V3-With-Atomic-Design'),
+      dir: require('path').join(__dirname, './coverage/Fake-Doors-V3-With-Atomic-Design'),
       subdir: '.',
       reporters: [
         { type: 'html' },

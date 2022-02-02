@@ -1,0 +1,48 @@
+@import 'src/styles';
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: darkgrey;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@include media-breakpoint-down(sm) {
+  .card {
+    flex: 0 1 80%;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+/* Normal phones (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 425px) {
+  .card {
+    flex: 0 1 48%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@include media-breakpoint-up(md) {
+  .card {
+    flex: 0 1 32%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@include media-breakpoint-up(lg) {
+  .card {
+    flex: 0 1 24%;
+  }
+}

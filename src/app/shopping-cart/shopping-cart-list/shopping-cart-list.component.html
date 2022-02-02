@@ -1,0 +1,13 @@
+<span *ngIf="cartItems.length === 0" class="alert alert-info">Your Cart is Empty</span>
+<ul class="list-group" *ngIf="cartItems.length > 0">
+  <li
+    class="list-group-item"
+    *ngFor="let item of cartItems"
+  >
+    {{item.amount}}x {{item.name}} - &euro; {{item.price * item.amount}}
+    <app-button BackgroundColor="red" TextColor="white" (click)="deleteItem(item)">Delete item</app-button>
+  </li>
+  <li class="list-group-item active">
+  <strong>Total: &euro; </strong>{{cartTotal}}
+  </li>
+</ul>

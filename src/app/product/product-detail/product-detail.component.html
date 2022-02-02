@@ -1,0 +1,23 @@
+<app-modal title="{{productInfo.name}}">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+      <img src="{{productInfo.imagePath}}">
+    </div>
+    <div class="col-lg-6">
+
+          <p>{{productInfo.description}}</p>
+      <hr>
+      <p><strong>Quantity:</strong></p>
+      <input [(ngModel)]="amount" type="number" value="1" min="1" max="10" step="1">
+      <hr>
+      <p><strong>Cost: &euro;{{productInfo.price}}</strong></p>
+    </div>
+    </div>
+  </div>
+</app-modal>
+  <div class="modal-footer">
+    <button (click)="onAddProduct()" type="button" class="btn btn-outline-success">Add to cart</button>
+    <button (click)="closeModal('Close click')" type="button" class="btn btn-outline-dark">Close</button>
+  </div>
+

@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Winkel-Sinkel-V3-With-Atomic-Design'`, () => {
+  it(`should have as title 'Fake-Doors-V3-With-Atomic-Design'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Winkel-Sinkel-V3-With-Atomic-Design');
+    expect(app.title).toEqual('Fake-Doors-V3-With-Atomic-Design');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Winkel-Sinkel-V3-With-Atomic-Design app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Fake-Doors-V3-With-Atomic-Design app is running!');
   });
 });

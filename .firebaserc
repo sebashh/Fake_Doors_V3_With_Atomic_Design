@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fakedoors-deafb": {
+      "hosting": {
+        "Fake-Doors-V3-With-Atomic-Design": [
+          "fakedoors-deafb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fakedoors-deafb"
+  }
+}

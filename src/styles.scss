@@ -1,0 +1,15 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "node_modules/bootstrap/scss/alert";
+
+@mixin title-font {
+  //text-transform: uppercase
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #3b3b3b;
+}
+
+h5 {
+  @include title-font
+}
+

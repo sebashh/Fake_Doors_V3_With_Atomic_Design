@@ -1,0 +1,17 @@
+<div class="container">
+  <button class="btn btn-primary" (click)="Destruction()">Delete Product</button>
+
+  <div class="cards">
+    <app-product-item class="card stretched-link" (click)="openProductDetailModal(productElement)"
+      *ngFor="let productElement of products"
+      [product]="productElement"
+    ></app-product-item>
+<!--    <app-card class="card stretched-link"-->
+<!--              (click)="openProductDetailModal(product)" *ngFor="let product of products"-->
+<!--              cardTitle="{{product.name}}"-->
+<!--              cardImg="{{product.imagePath}}"-->
+<!--              cardText="{{product.description}}"-->
+<!--    >-->
+<!--    </app-card>-->
+  </div>
+</div>
